@@ -55,6 +55,7 @@ MonoBehaviour:
   - {fileID: 393216405066534356, guid: f88415ba7746a5d47b9ab0ccedea2c32, type: 3}
   - {fileID: 7910348389338375666, guid: 08e31ba22a1819e44b0e278d373d53e4, type: 3}
   - {fileID: 8808732912213731881, guid: ade5b39ff63a01d4d98201a2d02135ae, type: 3}
+  - {fileID: 430413652588144203, guid: 8de4c0d0e14559f4bb7953bc7df63486, type: 3}
   CurrentWeaponLevel: 0
   MaxWeaponLevel: 3
 --- !u!114 &3958490047935685486
@@ -71,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fuel: 100
   MaxFuel: 100
-  FuelDecreaseSpeed: 2
+  FuelDecreaseSpeed: 1
 --- !u!114 &6032003255950415526
 MonoBehaviour:
   m_ObjectHideFlags: 0

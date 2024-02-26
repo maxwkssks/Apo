@@ -67,6 +67,6 @@ public class PlayerHPSystem : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        GameInstance.instance.CurrentPlayerHP = Health;
+        //GameInstance.instance.CurrentPlayerHP = Health;
     }
 }

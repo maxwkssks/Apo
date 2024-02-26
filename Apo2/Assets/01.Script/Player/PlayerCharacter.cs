@@ -41,6 +41,7 @@ public class PlayerCharacter : BaseCharacter
 
     public void DeadProcess()
     {
+        GameManager.Instance.InitInstance();
         Destroy(gameObject);
         SceneManager.LoadScene("MainMenu");
     }
@@ -70,6 +71,7 @@ public class PlayerCharacter : BaseCharacter
         if (Input.GetKey(KeyCode.Z)) ActivateSkill(EnumTypes.PlayerSkill.Primary);
         if (Input.GetKeyUp(KeyCode.X)) ActivateSkill(EnumTypes.PlayerSkill.Repair);
         if (Input.GetKeyUp(KeyCode.C)) ActivateSkill(EnumTypes.PlayerSkill.Bomb);
+        if (Input.GetKeyUp(KeyCode.V)) ActivateSkill(EnumTypes.PlayerSkill.So);
     }
 
     private void InitializeSkills()

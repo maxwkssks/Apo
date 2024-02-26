@@ -34,6 +34,17 @@ public class GameManager : MonoBehaviour
 
     public PlayerCharacter GetPlayerCharacter() { return CharacterManager.Player.GetComponent<PlayerCharacter>(); }
 
+    public void InitInstance()
+    {
+        GameInstance.instance.GameStartTime = 0f;
+        GameInstance.instance.Score = 0;
+        GameInstance.instance.CurrentStageLevel = 1;
+        GameInstance.instance.CurrentPlayerWeaponLevel = 0;
+        GameInstance.instance.CurrentPlayerHP = 3;
+        GameInstance.instance.CurrentPlayerFuel = 100f;
+        GameInstance.instance = null;
+    }
+
     void Start()
     {
         if(CharacterManager == null) { return; }
