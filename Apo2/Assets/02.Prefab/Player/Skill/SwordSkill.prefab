@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3209ed90b5df4854faf5afa0dceb0a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CooldownTime: 1.5
+  CooldownTime: 1
   CurrentTime: 0
   bIsCoolDown: 0
   SkillPrefab: {fileID: 1222134793107651151, guid: 85076047b57a3de4ea4f55595122bd0c, type: 3}

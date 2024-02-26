@@ -10,6 +10,7 @@ public class PlayerUI : MonoBehaviour
     public Image[] HealthImages = new Image[3];
     public Image RepairSkill;
     public Image BombSkill;
+    public Image SoSkill;
     public Slider FuelSlider;
 
     public TextMeshProUGUI SkillCooldownNoticeText;
@@ -20,6 +21,7 @@ public class PlayerUI : MonoBehaviour
     {
         _coolDownTexts[EnumTypes.PlayerSkill.Repair] = RepairSkill.GetComponentInChildren<TextMeshProUGUI>();
         _coolDownTexts[EnumTypes.PlayerSkill.Bomb] = BombSkill.GetComponentInChildren<TextMeshProUGUI>();
+        _coolDownTexts[EnumTypes.PlayerSkill.So] = SoSkill.GetComponentInChildren<TextMeshProUGUI>();
     }
 
     private void Update()
@@ -43,6 +45,7 @@ public class PlayerUI : MonoBehaviour
     {
         UpdateSkill(EnumTypes.PlayerSkill.Repair);
         UpdateSkill(EnumTypes.PlayerSkill.Bomb);
+        UpdateSkill(EnumTypes.PlayerSkill.So);
     }
 
     private void UpdateSkill(EnumTypes.PlayerSkill skill)
